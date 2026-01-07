@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import TanStackProvider from "@/components/TanStackProvider/TanStackProvider";
+import Header from "@/components/Header/Header";
 
 
 
@@ -26,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable}`}>
         <TanStackProvider>
-         {/* <Header /> */}
+         <Header />
          <main>{children}</main>
         </TanStackProvider>
         
