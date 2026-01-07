@@ -1,11 +1,15 @@
+import Link from "next/link";
+import css from "./page.module.css";
 
 
 export default function Home() {
   return (
-    <div>
-      <main>
-       
-      </main>
+    <section className={css.hero}>
+    <div className="container">
+    <h1 className={css.heroTitle}>Campers of your dreams</h1>
+    <p className={css.heroText}>You can find everything you want in our catalog</p>
+    <Link className={css.heroButton} href="/catalog">View Now</Link>
     </div>
+    </section>
   );
 }
