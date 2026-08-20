@@ -13,7 +13,7 @@ const TruckItem = ({ truck }: TruckItemProps) => {
   return (
     <div className={css.card}>
       <Image
-        src={truck.gallery?.[0]?.thumb || truck.coverImage }
+        src={truck.gallery?.[0]?.thumb || truck.coverImage || "https://placehold.co/400x300?text=No+Photo"}
         alt={truck.name}
         width={292}
         height={320}
