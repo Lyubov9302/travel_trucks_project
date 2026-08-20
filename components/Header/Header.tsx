@@ -2,7 +2,7 @@ import Link from "next/link";
 import css from "./Header.module.css";
 
 
-const Header = async () => {
+const Header = () => {
   return (
     <header className={css.header}>
          <div className={`container ${css.headerContainer}`}>

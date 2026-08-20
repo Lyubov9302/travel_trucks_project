@@ -1,8 +1,8 @@
-import { Truck } from "@/types/trucks";
+import { Camper } from "@/types/camper";
 import TruckItem from "../TruckItem/TruckItem";
 
 type TruckListProps = {
-  trucks: Truck[];
+  trucks: Camper[];
 };
 
 const TruckList = ({ trucks }: TruckListProps) => {

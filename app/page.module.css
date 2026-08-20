@@ -1,6 +1,10 @@
 .hero {
   padding: 260px 0;
-  background-image: url(/images/hero1x.webp);
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+  url(/images/hero1x.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -10,16 +14,20 @@
 
 @media (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/hero2x.webp);
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+     url(/images/hero2x.webp);
   }
 }
 
 .heroTitle {
-font-weight: 600;
-font-size: 48px;
-line-height: 0.67;
-color: #f7f7f7;
-margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 0.67;
+  color: #f7f7f7;
+  margin-bottom: 16px;
 }
 
 .heroText {
@@ -31,18 +39,18 @@ margin-bottom: 16px;
 }
 
 .heroButton {
-display: inline-block;
-border-radius: 200px;
-padding: 16px 60px;
-min-width: 196px;
-background-color: #e44848;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: -0.01em;
-color: #fff;
+  display: inline-block;
+  border-radius: 200px;
+  padding: 16px 60px;
+  min-width: 196px;
+  background-color: #e44848;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #fff;
 
-transition: color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .heroButton:hover,
